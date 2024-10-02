@@ -1,0 +1,125 @@
+.laranja {
+    color: #e75b00;
+}
+.cinza {
+    color: #3c3c3c;
+}
+.branco {
+    color: #dfdfdf
+}
+.bege {
+    color: #cec4c2;
+}
+.bege-escuro{
+    color: #a39594;
+}
+.days-one{
+    font-family: "Days One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.roboto{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.body-login{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.caixa-logo{
+    width: 60%;
+    height: 100%;
+    background-color: #e75b00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.caixa-login{
+   width: 40%;
+   height: 100%;
+   background-color: #dfdfdf;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.sobrepor {
+    display: none;
+    position: fixed; 
+    left: 0;
+    width: 100vw;
+    height: 100vh; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+.caixa-aviso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #dfdfdf;
+    text-align: center;
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 25px;
+}
+.linha-logo{
+    width: 5px;
+    height: 100px;
+    margin: 20px;
+    background-color: white;
+}
+.texto-logo{
+    font-family: "Days One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: white;
+}
+.btn-logar{
+    background-color: #e75b00;
+    height: 90px;
+    width: 180px;
+    border: none;
+    color: #dfdfdf;
+    border-radius: 5px;
+    margin-top: 40px;
+    font-size: 35px;
+    cursor: pointer;
+}
+.ver-senha{
+  accent-color: #e75b00;
+  cursor: pointer;
+  margin-bottom: 0;
+  
+}
+.inputs{
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.3);
+}
+.inputs:focus{
+    border: none;
+    outline: none;
+}
+.inputs:-webkit-autofill{
+    border:none;
+    border-radius:  5px;
+    background-color: white;
+}
+@media (max-width: 768px) {
+    .caixa-logo{
+        display: none;
+    }
+    .caixa-login{
+        width: 100%;
+    }
+}
+

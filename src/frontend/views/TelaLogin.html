@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Login</title>
+
+    <!-- Links para fontes (Days One e Roboto) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Link para o CSS externo -->
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="body-login">
+
+    <!-- Bloco do logotipo (imagem e texto) -->
+    <div class="caixa-logo"> 
+        <div class="linha-logo"></div>
+        <!-- Texto abaixo do logo -->
+        <div style="display: flex; flex-direction: column; cursor: default;">
+            <div class="texto-logo">SISTEMA</div>
+            <div class="texto-logo">DE LOGIN</div>
+        </div>
+    </div>
+
+    <!-- Formulário de login -->
+    <form method="POST" class="caixa-login" id="login-form">
+        <!-- Título e subtítulo (KOTV e LOGIN) -->
+        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <div class="days-one laranja" style="font-size: 70px; cursor: default;">SISTEMA</div>
+            <div class="days-one cinza" style="font-size: 30px; cursor: default;">LOGIN</div>
+        </div>
+
+        <!-- Campos do formulário de login (username e password) -->
+        <div style="margin: 15px; display: grid; gap: 20px; width: 70%;">
+            <!-- Campo de username -->
+            <div style="display: flex; flex-direction: column; font-size: 15px; color: #3c3c3c; cursor: default;" class="days-one">
+                username
+                <input type="text" placeholder="Digite o username" style="height: 30px;" class="inputs" name="login">
+            </div>
+            <!-- Campo de senha -->
+            <div style="display: flex; flex-direction: column; font-size: 15px; color: #3c3c3c; cursor: default;" class="days-one">
+                password
+                <input type="password" placeholder="Digite a password" style="height: 30px;" class="inputs" id="senha" name="senha">
+            </div>
+            <!-- Aviso de erro (exibido quando username ou password estão incorretos) -->
+            <p style="display: none; justify-content: center; color: red;" class="days-one" id="aviso-error">Username ou Password incorretos</p>
+            
+            <!-- Opções de "Ver senha" e "Esqueceu a senha?" -->
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div >
+                    <input type="checkbox" class="ver-senha" id="ver-senha" >
+                    <span style="font-size: 12px; color: #3c3c3c; cursor: default;" class="roboto">Ver senha</span>
+                </div>
+                <span style="font-size: 12px; text-decoration: underline; color: #3c3c3c; cursor: pointer;" class="roboto" id="esqueceu-senha">Esqueceu a senha?</span>
+            </div>
+        </div>
+
+        <!-- Botão de login -->
+        <button type="submit" class="btn-logar days-one" id="btn-logar">LOGAR</button>
+    </form>
+
+    <!-- Caixa de aviso sobre recuperação de senha -->
+    <div class="sobrepor" id="caixa-aviso">
+        <div class="caixa-aviso">
+            <!-- Mensagem sobre recuperação de senha -->
+            <p class="roboto">Entre em contato com o Aministrador e informe que esqueceu a senha, a resposta pode demorar.</p>
+            <p class="roboto">Whatsapp: (xx) xxxxx-xxxx</p>
+            <!-- Botões para fechar o aviso ou abrir o WhatsApp -->
+            <div style="display: flex; justify-content: space-between; width: 100%; margin-top: 20px;">
+                <button style="border: none; border-radius: 3px; background-color: #e75b00; color: white; font-size: 20px; cursor: pointer;" class="days-one" id="fechar-aviso"> Fechar </button>
+                <button style="border: none; border-radius: 3px; background-color: rgb(3, 218, 3); color: white; font-size: 20px; cursor: pointer;" class="days-one" id="abrir-whatsapp"> Whatsapp </button>
+            </div>
+        </div>
+    </div>
+
+</body>
+<!-- Script da tela de login -->
+<script src="/scripts/TelaLogin.js"></script>
+</html>
